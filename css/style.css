@@ -1,19 +1,26 @@
 body{
   text-align: center;
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 150%;
+  font-size: 100%;
   background-color: lightgray;
 }
 
 nav{
   background-color: #e8e0d5;
   padding: 10px;
+  display: inline-block;
+  width: 80%;
+}
+
+nav img{
+  width: 10%;
 }
 
 nav a:hover{
   color: red;
 }
 
+/*
 li{
   display: inline-block;
   width: 30%;
@@ -24,6 +31,7 @@ li{
   line-height: 100px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
+*/
 
 header{
   background-color: #e8e0d5;
@@ -66,6 +74,24 @@ img{
   animation: fadeIn 3s ease-in-out;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.grid img{
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
